@@ -1,0 +1,22 @@
+<app-header titol="Inicio de sesión"></app-header>
+<ion-content>
+    <form>
+        <ion-item lines="full">
+            <ion-label position="floating">Username</ion-label>
+            <ion-input [(ngModel)]="name" name="name" type="text" placeholder="Username" required></ion-input>
+
+        </ion-item>
+
+        <ion-item lines="full">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input [(ngModel)]="password" name="password" type="password" placeholder="Contraseña" required></ion-input>
+        </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <ion-button type="submit" color="danger" expand="block" (click)="login()">Iniciar sesión</ion-button>
+                No tienes cuenta?, <a [routerLink]="['/registro']" class="small-text">Registrate!</a>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

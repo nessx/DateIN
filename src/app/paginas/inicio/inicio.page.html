@@ -1,0 +1,13 @@
+<app-header titol="INICIO"></app-header>
+<ion-content class="auth-form">
+    <ion-grid>
+        <ion-row>
+            <ion-col align-self-center>
+                <ion-button [routerLink]="['/registro']" expand="block" color="primary">Registrate</ion-button>
+                <span class="divider line one-line">o</span>
+                <span class="already">Ya estas registrado?</span>
+                <ion-button [routerLink]="['/login']" expand="block" color="danger">Inicia Sesión</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

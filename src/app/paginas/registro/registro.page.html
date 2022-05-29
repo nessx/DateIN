@@ -1,0 +1,31 @@
+<app-header titol="Registrarse"></app-header>
+
+<ion-content>
+    <form>
+        <!--<ion-item lines="full">
+            <ion-label position="floating">Nombres</ion-label>
+            <ion-input type="text" required></ion-input>
+        </ion-item>-->
+
+        <ion-item lines="full">
+            <ion-label position="floating">Username</ion-label>
+            <ion-input [(ngModel)]="nick" name="nick" type="text" placeholder="Username" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+            <ion-label position="floating">descripción</ion-label>
+            <ion-input [(ngModel)]="descripcion" name="descripcion" type="text" placeholder="Descripción" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input [(ngModel)]="password" name="password" type="password" placeholder="Contraseña" required></ion-input>
+        </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <ion-button type="submit" color="danger" expand="block" (click)="register()">Registrarse</ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>
